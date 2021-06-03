@@ -28,7 +28,9 @@ body {
   justify-content: flex-end;
 }
 .mole__hill-container {
+  display: relative;
   height: 100px;
+  width:auto;
 }
 
 
@@ -43,22 +45,21 @@ body {
 #container__mole8 {grid-area: mole8}
 
 .mole__hill {
-  position: relative;
-  bottom: 27px;
-  left: 18px;
+  position: absolute;
   width: 80%;
+  top: 100px;
   max-width: 150px;
   border: 1px solid black
 }
 
 .mole__head{
-  position: relative;
+  position: absolute;
   width: 60%;
   max-width: 100px;
   border: 1px solid black
 }
 
-.digging {
+/* .digging {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -82,4 +83,4 @@ body {
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
   }
-}
+} */
