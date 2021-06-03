@@ -27,6 +27,9 @@ body {
   align-content: space-around;
   justify-content: flex-end;
 }
+.mole__hill-container {
+  height: 100px;
+}
 
 
 
@@ -42,14 +45,46 @@ body {
 .mole__hill {
   position: relative;
   bottom: 27px;
-  left: 5px;
+  left: 18px;
   width: 80%;
   max-width: 150px;
   border: 1px solid black
 }
 
 .mole__head{
+  position: relative;
   width: 60%;
   max-width: 100px;
   border: 1px solid black
 }
+
+.digging {
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+
+
+@-webkit-keyframes move_mole { from { margin-bottom: -20%; } to { margin-bottom: 100%; }  }
+        @keyframes move_mole { from { margin-bottom: -20%; } to { margin-bottom: 100%; }  }
