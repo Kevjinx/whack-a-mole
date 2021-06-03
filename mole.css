@@ -1,1 +1,30 @@
 /* Write your CSS here. */
+
+body {
+  background-color: hotpink;
+}
+
+.container {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'mole1 mole2 mole3 mole4'
+    'mole5 mole6 mole7 mole8';
+}
+
+.container__element {
+  border: 1px solid black;
+  height: 200px;
+}
+
+
+#container__mole1 {grid-area: mole1}
+#container__mole2 {grid-area: mole2}
+#container__mole3 {grid-area: mole3}
+#container__mole4 {grid-area: mole4}
+#container__mole5 {grid-area: mole5}
+#container__mole6 {grid-area: mole6}
+#container__mole7 {grid-area: mole7}
+#container__mole8 {grid-area: mole8}
