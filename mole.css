@@ -59,8 +59,8 @@ body {
 }
 
 .digging {
-  -webkit-animation: 4s linear 0s infinite alternate move_eye;
-          animation: 4s linear 0s infinite alternate move_eye;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-bottom {
@@ -83,8 +83,3 @@ body {
             transform: translateY(100px);
   }
 }
-
-
-
-@-webkit-keyframes move_mole { from { margin-bottom: -20%; } to { margin-bottom: 100%; }  }
-        @keyframes move_mole { from { margin-bottom: -20%; } to { margin-bottom: 100%; }  }
