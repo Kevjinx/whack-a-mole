@@ -7,6 +7,7 @@ body {
 .container {
   margin: 20px auto;
   display: grid;
+  gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -19,6 +20,15 @@ body {
   height: 200px;
 }
 
+.container__mole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: flex-end;
+}
+
+
 
 #container__mole1 {grid-area: mole1}
 #container__mole2 {grid-area: mole2}
@@ -28,3 +38,18 @@ body {
 #container__mole6 {grid-area: mole6}
 #container__mole7 {grid-area: mole7}
 #container__mole8 {grid-area: mole8}
+
+.mole__hill {
+  position: relative;
+  bottom: 27px;
+  left: 5px;
+  width: 80%;
+  max-width: 150px;
+  border: 1px solid black
+}
+
+.mole__head{
+  width: 60%;
+  max-width: 100px;
+  border: 1px solid black
+}
