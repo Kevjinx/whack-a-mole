@@ -1,7 +1,10 @@
 /* Write your CSS here. */
 
+
+
 body {
   background-color: hotpink;
+  cursor: url('/cursor.cur'), auto;
 }
 
 .container {
@@ -11,12 +14,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    'mole1 mole2 mole3 mole4'
-    'mole5 mole6 mole7 mole8';
+    "mole1 mole2 mole3 mole4"
+    "mole5 mole6 mole7 mole8";
 }
 
 .container__element {
-  border: 1px solid black;
   height: 200px;
 }
 
@@ -28,59 +30,99 @@ body {
   justify-content: flex-end;
 }
 .mole__hill-container {
-  display: relative;
   height: 100px;
-  width:auto;
+  background-color: hotpink;
+  z-index: 4;
 }
 
-
-
-#container__mole1 {grid-area: mole1}
-#container__mole2 {grid-area: mole2}
-#container__mole3 {grid-area: mole3}
-#container__mole4 {grid-area: mole4}
-#container__mole5 {grid-area: mole5}
-#container__mole6 {grid-area: mole6}
-#container__mole7 {grid-area: mole7}
-#container__mole8 {grid-area: mole8}
+#container__mole1 {
+  grid-area: mole1;
+}
+#container__mole2 {
+  grid-area: mole2;
+}
+#container__mole3 {
+  grid-area: mole3;
+}
+#container__mole4 {
+  grid-area: mole4;
+}
+#container__mole5 {
+  grid-area: mole5;
+}
+#container__mole6 {
+  grid-area: mole6;
+}
+#container__mole7 {
+  grid-area: mole7;
+}
+#container__mole8 {
+  grid-area: mole8;
+}
 
 .mole__hill {
-  position: absolute;
+  position: relative;
+  bottom: 27px;
+  left: 18px;
   width: 80%;
-  top: 100px;
   max-width: 150px;
-  border: 1px solid black
 }
 
-.mole__head{
-  position: absolute;
+.mole__head {
+  position: relative;
   width: 60%;
   max-width: 100px;
-  border: 1px solid black
 }
 
-/* .digging {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.digging {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    transform: translateY(100px);
   }
 }
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+.popup {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
             transform: translateY(100px);
   }
-} */
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
